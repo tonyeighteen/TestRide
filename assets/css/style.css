@@ -1,0 +1,641 @@
+@font-face {
+    font-family:VN_BMWMotorrad-Regular;
+    src:url(../fonts/VN_BMWMotorrad-Regular.ttf) format("truetype");
+    font-weight:400
+    }
+    
+    @font-face {
+    font-family:VN_BMWMotorrad-Bold;
+    src:url(../fonts/VN_BMWMotorrad-Bold.ttf) format("truetype");
+    font-weight:700
+    }
+    
+    @font-face {
+    font-family:VN_BMWMotorrad-Italic;
+    src:url(../fonts/VN_BMWMotorrad-Italic.ttf) format("truetype");
+    font-style:italic
+    }
+    
+    @font-face {
+    font-family:VN_BMWMotorrad-Heavy;
+    src:url(../fonts/VN_BMWMotorrad-Heavy.ttf) format("truetype");
+    font-style:italic
+    }
+    
+    
+    body{font-family: VN_BMWMotorrad-Regular;margin: 0px auto;background:white;font-size: 14px;overflow-x:hidden;}
+    ul{padding:0}
+    ol, ul, li{margin:0;list-style:none}
+    textarea:focus, 
+    textarea.form-control:focus, 
+    input.form-control:focus, 
+    input[type=text]:focus, 
+    input[type=password]:focus, 
+    input[type=email]:focus, 
+    input[type=number]:focus, 
+    button[type=submit]:focus,
+    [type=text].form-control:focus, 
+    [type=password].form-control:focus, 
+    [type=email].form-control:focus, 
+    [type=tel].form-control:focus, 
+    [contenteditable].form-control:focus {
+      box-shadow: inset 0 -1px 0 #ddd;
+    }
+    .h1, .h2, .h3, h1, h2, h3{margin:0}
+    
+    .line{
+        padding:20px 0;
+    }
+    .headline-text{font-family:VN_BMWMotorrad-Heavy;padding-bottom: 30px;padding-top: 15px;font-size: 32px;}
+    section{padding:40px 0}
+    
+    .margin-left{margin-left:65px}
+    .hedding-top{
+        background-image: url(../images/top-pic.png);
+        background-repeat:no-repeat;
+        min-height:100px;
+        background-position:center;
+        background-size:100%;
+    }
+    .bg-light2{
+        background:#f2f2f2
+    }
+    .container{
+        max-width:1100px;
+    }
+    .toppic-number{
+        line-height: 50px;
+        width: 50px;
+        color: #fff;
+        background: #000;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 36px;
+        font-family:VN_BMWMotorrad-Bold;
+        float:left;
+    }
+    .toppic-text{
+        line-height: 43px;
+        margin-left: 65px;
+        font-size: 24px;
+        font-family:VN_BMWMotorrad-Bold;
+        margin-top:4px;
+    }
+    
+    .change-vehicle{
+        margin-top: 15px;
+        padding: 15px 0 15px 25px;
+        color: #0062ff;
+        background: url(../images/icon_minus.png) no-repeat left 24px;
+        cursor: pointer;
+        display: block;
+        transition: background .3s ease-out;
+    }
+    
+    .custom-control.image-checkbox
+    {
+        text-align: center;
+        padding-left:10px;
+    }
+    
+    .custom-control.image-checkbox img{
+        width:70%;
+    }
+    .custom-control.image-checkbox label:after, .custom-control.image-checkbox label:before
+    {
+        left: 1rem;
+        
+    }
+    .select-vehicle .col-sm-4
+    {
+        padding:0;
+    }
+    
+    .custom-radio{
+        background:white;
+        padding:10px;
+        margin-top:10px;
+        min-height:185px;
+    }
+    
+    .vehicle-title{
+        font-size: 16px;
+        color: #000000;
+        font-family:VN_BMWMotorrad-Regular;
+        margin-bottom:0;
+        
+    }
+    
+    .p10{
+        padding:0 10px !important;
+    }
+    
+    
+    
+    .select-vehicle #faq .card {
+    margin-bottom: 1px;
+    border: 0;
+    border-radius: 0;
+    }
+    
+    .select-vehicle #faq .card .card-header {
+      border: 0;
+      -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+              box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+      border-radius: 2px;
+      padding: 0;
+    }
+    
+    .select-vehicle #faq .card .card-header .btn-header-link {
+      color: #fff;
+      display: block;
+      font-size:18px;
+      text-align: left;
+      background: #ffffff;
+      color: #919191;
+      padding: 15px;
+      border-radius: 0;
+    }
+    
+    .select-vehicle #faq .card .card-header .btn-header-link:after {
+      content: "\f106";
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      float: right;
+    }
+    
+    .select-vehicle #faq .card .card-header .btn-header-link.collapsed {
+      background: #fff;
+       color: #919191;
+    }
+    
+    .select-vehicle #faq .card .card-header .btn-header-link.collapsed:after {
+      content: "\f107";
+    }
+    
+    .select-vehicle #faq .card .collapsing {
+      background: #f2f2f2;
+      line-height: 30px;
+    }
+    
+    .select-vehicle #faq .card .collapse {
+      border: 0;
+    }
+    
+    .select-vehicle #faq .card .collapse.show {
+      background: #f2f2f2;
+      line-height: 30px;
+      color: #222;
+    }
+    
+    .card-body{
+        padding:0 0 10px 0;
+    }
+    
+    .suggest-date h4{
+        margin-top: 30px;
+    }
+    
+    .contact-details{
+    }
+    
+    
+    /* Custom Radio Button Start*/
+    
+    .radiotextsty {
+      
+    }
+    
+    .customradio {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 0px;
+      cursor: pointer;
+      font-size: 18px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    /* Hide the browser's default radio button */
+    .customradio input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    /* Create a custom radio button */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 22px;
+      width: 22px;
+      background-color: white;
+      border-radius: 50%;
+      border:1px solid #BEBEBE;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .customradio:hover input ~ .checkmark {
+      background-color: transparent;
+    }
+    
+    /* When the radio button is checked, add a blue background */
+    .customradio input:checked ~ .checkmark {
+      background-color: white;
+      border:1px solid #BEBEBE;
+    }
+    
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    /* Show the indicator (dot/circle) when checked */
+    .customradio input:checked ~ .checkmark:after {
+      display: block;
+    }
+    
+    /* Style the indicator (dot/circle) */
+    .customradio .checkmark:after {
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #0062ff;
+    }
+    .form-group input, .form-group select{
+        border-radius: 0;
+        background-color: #fff;
+        border: none;
+        height: 50px;
+        color: #2b2e33;
+    }
+    .form-group select{
+        background:#f2f2f2;
+    }
+    
+    .form-group p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top:5px;
+    }
+    
+    .form-group label {
+        color: #919191;
+        margin-bottom: 10px;
+        font-size: 14px;
+        
+    }
+    
+    .ng-bindings{
+        font-size: 20px;
+        line-height: 28px;
+        margin:30px 0;
+    }
+    
+    .selected-dealer .summaryData
+    {
+        display:none;
+    }
+    
+    .selected-dealer .active
+    {
+        display:block !important;
+    }
+    .selected-dealer .summaryData, .section.odd {
+        background-color: #f2f2f2;
+    }
+    .selected-dealer .summaryData {
+        word-break: normal;
+        padding: 20px;
+    }
+    .selected-dealer .summaryData .summaryTitle {
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .selected-dealer .summaryData .summaryBody {
+        font-size: 16px;
+    }
+    .btn-testride{
+        background-color: #0062ff;
+        width: auto;
+        height: auto;
+        min-height: 40px;
+        font-size: 16px;
+        border-radius:0;
+        color:white;
+        margin:60px 0;
+        font-family:VN_BMWMotorrad-Bold;
+        border:0;
+        padding: 0 20px 0;
+    }
+    .btn-testride:hover{
+        background-color: #174999;
+        color:white
+    }
+    ::marker {
+        display: none;
+        content: "";
+    }
+    
+    .col-hidden{
+        display:none;
+    }
+    
+    
+    /*Bootstrap Calendar*/
+    #datepicker  .datepicker {
+        border-radius: 0;
+        padding: 0;
+        margin-top:30px;
+    }
+    #datepicker .datepicker table
+    {
+        background:#e3e7ee;
+    }
+    #datepicker  .datepicker-days table thead, #datepicker  .datepicker-days table tbody, #datepicker .datepicker-days table tfoot {
+        padding: 5px;
+        /* display: list-item; */
+    }
+    
+    #datepicker  .datepicker-days table thead tr:nth-child(2n+0) td, #datepicker  .datepicker-days table thead tr:nth-child(2n+0) th {
+        border-radius: 3px;
+    }
+    #datepicker .datepicker-days table thead tr:nth-child(3n+0) {
+        text-transform: uppercase;
+        font-weight: 300 !important;
+        font-size: 12px;
+        color: black;
+    }
+    #datepicker  .table-condensed > tbody > tr > td, #datepicker  .table-condensed > tbody > tr > th, #datepicker  .table-condensed > tfoot > tr > td, #datepicker .table-condensed > tfoot > tr > th, #datepicker .table-condensed > thead > tr > td, #datepicker .table-condensed > thead > tr > th {
+        padding: 7px 13px;
+    }
+    #datepicker  .datepicker-months table thead td, #datepicker  .datepicker-months table thead th, #datepicker  .datepicker-years table thead td, #datepicker  .datepicker-years table thead th, #datepicker .datepicker-decades table thead td, #datepicker .datepicker-decades table thead th, #datepicker  .datepicker-centuries table thead td, #datepicker  .datepicker-centuries table thead th {
+        border-radius: 0;
+    }
+    #datepicker  .datepicker td, #datepicker  .datepicker th {
+        border-radius: 0;
+        padding: 0 6px;
+    }
+    #datepicker  .datepicker-days table thead, #datepicker  .datepicker-months table thead, #datepicker  .datepicker-years table thead, #datepicker .datepicker-decades table thead, #datepicker  .datepicker-centuries table thead {
+        background: #e3e7ee;
+        color: #0062ff;
+        border-radius: 0;
+        padding: 10px 12px;
+    }
+    #datepicker  .datepicker table tr td.active, #datepicker  .datepicker table tr td.active:hover, #datepicker  .datepicker table tr td.active.disabled, #datepicker  .datepicker table tr td.active.disabled:hover {
+        background-image: none;
+    }
+    #datepicker  .datepicker .prev, #datepicker  .datepicker .next {
+        color: #0062ff;
+        transition: 0.3s;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #0062ff
+    }
+    
+    #datepicker  .datepicker .prev:hover, .datepicker .next:hover {
+        background: transparent;
+        color: #0062ff;
+    }
+    #datepicker  .datepicker .datepicker-switch {
+        font-weight: 600;
+        transition: 0.3s;
+        border: 1px solid #0062ff
+    }
+    #datepicker  .datepicker .datepicker-switch:hover {
+        color: #0062ff;
+        background: transparent;
+    }
+    #datepicker  .datepicker table tr td span {
+        border-radius: 2px;
+        margin: 3%;
+        width: 27%;
+    }
+    
+    #datepicker  .dropdown-menu {
+        border: 1px solid rgba(0,0,0,.1);
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    }
+    #datepicker  .datepicker-dropdown.datepicker-orient-top:before {
+        border-top: 7px solid rgba(0,0,0,.1);
+    }
+    
+    #datepicker .datepicker-days .day{
+        border:1px solid #e3e7ee;
+        background:#c6d3ea;
+    }
+    
+    #datepicker  .datepicker table tr td span.active, #datepicker  .datepicker table tr td span.active:hover, #datepicker  .datepicker table tr td span.active.disabled, #datepicker  .datepicker table tr td span.active.disabled:hover {
+      background-color: #3546b3;
+      background-image: none;
+    }
+    
+    #datepicker .datepicker table tr td.disabled, .datepicker table tr td.disabled:hover
+    {
+        background: #e3e7ee !important;
+    }
+    
+    #datepicker  .datepicker table tr td.active.active{
+        background-color: #0062ff;
+    }
+    
+    #datepicker .datepicker .next.disabled, #datepicker  .datepicker .prev.disabled{
+        visibility: initial;
+    }
+    .datepicker.dropdown-menu th, .datepicker.dropdown-menu td {
+        padding: 5px;
+    }
+    #datepicker .datepicker-days .dow{
+        padding-top:7px ;
+        padding-right:14px;
+    }
+    #datepicker .datepicker-days .dow:last-child{
+        padding-right:5px;
+        border-right: 1px solid #e3e7ee;
+    }
+    .form-valid  {
+      opacity:0.5;
+    }
+    
+    .form-control-label abbr {
+      text-decoration: none;
+      font-weight: normal;
+    }
+    
+    .with-errors {
+        width: 100%;
+        margin-top: .25rem;
+        font-size: 100%;
+        color: #dc3545;
+    }
+    
+    @media (min-width: 1127px)
+    {
+        
+    }
+    @media (min-width: 1024px)
+    {
+    }
+    @media (min-width: 992px)
+    {
+        
+    }
+    @media (max-width: 991px)
+    {
+    }
+    
+    @media (max-width: 990px)
+    {
+    }
+    
+    @media only screen
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px) 
+      and (-webkit-min-device-pixel-ratio: 1) 
+      and (orientation: portrait)
+     {
+        .hedding-top{
+            min-height:120px;
+            background-size:200%;
+        }
+        .custom-radio{
+            min-height:190px;
+        }
+     }
+     
+     @media only screen and (max-width: 767px) and (min-width: 481px) 
+    {
+        
+    }
+        
+    @media (max-width: 600px)
+    {
+        .hedding-top{
+            min-height:80px;
+            background-size:250%;
+        }
+        .margin-left{
+            margin-left:0;
+        }
+        .toppic-text{
+            font-size:23px;
+        }
+        .btn-testride{
+            margin: 30px 0;
+        }
+    }
+    @media (max-width: 360px)
+    {
+         .table-condensed > tbody > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > thead > tr > th
+         {
+             padding: 7px 11px;
+         }
+    }	
+    @media (max-width: 320px)
+    {
+         
+    }
+    
+      /* Start - Loading effect */
+    .loading-screen.active {
+        display: block;
+    }
+    .loading-screen {
+        z-index: 100000;
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .lds-ring {
+        display: inline-block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        top: 50%;
+        left: 50%;
+        margin-left: -32px;
+        margin-top: -32px;
+    }
+    .lds-ring div {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      width: 51px;
+      height: 51px;
+      margin: 6px;
+      border: 6px solid #fff;
+      border-radius: 50%;
+      animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      border-color: #fff transparent transparent transparent;
+    }
+    .lds-ring div:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+    .lds-ring div:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+    .lds-ring div:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+    @keyframes lds-ring {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    /* End - Loading effect */
+    .loading {
+        position: relative;
+    }
+
+    .button__text {
+        transition: all 0.2s;
+    }
+      
+    .button--loading .button__text {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .button--loading::after {
+        content: "";
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 3px solid transparent;
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: button-loading-spinner 1s ease infinite;
+    }
+
+    @keyframes button-loading-spinner {
+        from {
+          transform: rotate(0turn);
+        }
+      
+        to {
+          transform: rotate(1turn);
+        }
+    }
+
