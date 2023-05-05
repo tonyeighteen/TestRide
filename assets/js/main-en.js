@@ -83,3 +83,62 @@ $("#bootstrapForm").submit(function(event) {
 	
  
 });
+
+// Dynamically removing an external JS or CSS file
+function removejscssfile(filename, filetype){
+    var targetelement=(filetype=="js")? "script" : (filetype=="css")? "link" : "none" //determine element type to create nodelist from
+    var targetattr=(filetype=="js")? "src" : (filetype=="css")? "href" : "none" //determine corresponding attribute to test for
+    var allsuspects=document.getElementsByTagName(targetelement)
+    for (var i=allsuspects.length; i>=0; i--){ //search backwards within nodelist for matching elements to remove
+    if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(filename)!=-1)
+        allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
+    }
+}
+ 
+removejscssfile("somescript.js", "js") //remove all occurences of "somescript.js" on page
+removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences "somestyle.css" on page
+// End - Dynamically removing an external JS or CSS file
+
+		//datepicker
+		$('#datepicker').datepicker({
+			//daysOfWeekDisabled: [0],
+			maxViewMode: 0,
+			startDate: '+3d',
+			
+		});
+		
+		 $('.input-group.date').datepicker({format: "dd/mm/yyyy"}); 
+
+		$('#datepicker').on('changeDate', function() {
+			$("#Contact_DateRide").focus();
+			$('#Contact_DateRide').val(
+				$('#datepicker').datepicker('getFormattedDate')
+				
+			);
+			
+		});
+		
+		//selected-dealer
+		$('#selected-dealer').on('change', function() {
+			var value = this.value;
+			$(".summaryData").removeClass("active");
+
+			if(value == "BMW Motorrad Long Biên"){
+				$("#summaryData1").addClass("active");
+			}else if(value == "BMW Motorrad Đà Nẵng"){
+				$("#summaryData2").addClass("active");
+			}else if(value == "BMW Motorrad Sala"){
+				$("#summaryData3").addClass("active");
+			}else if(value == "BMW Motorrad Nguyễn Văn Trỗi"){
+				$("#summaryData4").addClass("active");
+			}
+		   
+		});
+		
+		//active col
+		$('input[type=radio][name=Contact_Model]').change(function() {
+			$(".margin-left").removeClass("col-hidden");
+
+		});
+
+
