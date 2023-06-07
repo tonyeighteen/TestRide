@@ -112,7 +112,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 		$('#datepicker').on('changeDate', function() {
 			$("#Contact_DateRide").focus();
 			$('#Contact_DateRide').val(
-				$('#datepicker').datepicker('getFormattedDate')
+				$('#datepicker').datepicker.getFormattedDate('dd/mm/yyyy')
 				
 			);
 			
