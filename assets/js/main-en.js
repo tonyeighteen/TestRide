@@ -107,7 +107,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 			
 		});
 		
-		 $('#Contact_DateRide').datepicker({format:'dd/mm/yyyy'}); 
+		 $('.input-group.date').datepicker({format:'dd/mm/yyyy'}); 
 
 		$('#datepicker').on('changeDate', function() {
 			$("#Contact_DateRide").focus();
