@@ -107,12 +107,12 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 			
 		});
 		
-		 $('.input-group.date').datepicker.getFormattedDate('dd/mm/yyyy'); 
+		 $('.input-group.date').datepicker({format:'dd/mm/yyyy'}); 
 
 		$('#datepicker').on('changeDate', function() {
 			$("#Contact_DateRide").focus();
 			$('#Contact_DateRide').val(
-				$('#datepicker').datepicker.getFormattedDate('dd/mm/yyyy')
+				$('#datepicker').datepicker('getFormattedDate')
 				
 			);
 			
