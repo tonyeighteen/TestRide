@@ -95,7 +95,7 @@
 											<div class="row">
 												<div class="col-sm-4">
 													<div id="car1" class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck2a" value="R 1250 GS"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck2a" value="R 1250 GS"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck2a">
 															<img src="../assets/images/vehicle/R1250GS.jpg" alt="R 1250 GS" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">R 1250 GS</p>
@@ -105,7 +105,7 @@
 												
 												<div class="col-sm-4">
 													<div class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck2b" value="R 1250 GS Adventure"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck2b" value="R 1250 GS Adventure"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck2b">
 															<img src="../assets/images/vehicle/R1250GSAdventure.jpg" alt="R 1250 GS Adventure" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">R 1250 GS Adventure</p>
@@ -125,7 +125,7 @@
 												
 												<div class="col-sm-4">
 													<div class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck2d" value="S 1000 XR"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck2d" value="S 1000 XR"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck2d">
 															<img src="../assets/images/vehicle/S1000XR.jpg" alt="S 1000 XR" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">S 1000 XR</p>
@@ -145,7 +145,7 @@
 												
 												<div class="col-sm-4">
 													<div class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck2f" value="F 850 GS"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck2f" value="F 850 GS"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck2f">
 															<img src="../assets/images/vehicle/F850GS.jpg" alt="F 850 GS" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">F 850 GS</p>
@@ -187,7 +187,7 @@
 											<div class="row">
 												<div class="col-sm-4">
 													<div class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck28" value="C 400 X"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck28" value="C 400 X"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck28">
 															<img src="../assets/images/vehicle/C400X.jpg" alt="C 400 X" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">C 400 X</p>
@@ -196,7 +196,7 @@
 												</div>
 												<div class="col-sm-4">
 													<div class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck29" value="C 400 GT"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck29" value="C 400 GT"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck29">
 															<img src="../assets/images/vehicle/C400GT.jpg" alt="C 400 GT" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">C 400 GT</p>
@@ -217,7 +217,7 @@
 											<div class="row">
 												<div class="col-sm-4">
 													<div class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck210" value="S 1000 R"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck210" value="S 1000 R"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck210">
 															<img src="../assets/images/vehicle/S1000R.jpg" alt="S 1000 R" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">S 1000 R</p>
@@ -256,7 +256,7 @@
 											<div class="row">
 												<div class="col-sm-4">
 													<div class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck213" value="R nineT"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck213" value="R nineT"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck213">
 															<img src="../assets/images/vehicle/RnineT.jpg" alt="R nineT" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">R nineT</p>
@@ -274,10 +274,19 @@
 												</div>-->
 												<div class="col-sm-4">
 													<div class="custom-control custom-radio image-checkbox">
-														<input type="radio" class="custom-control-input" id="ck215" value="R 18"  name="Contact_Model"/>
+														<input type="radio" class="custom-control-input" id="ck215" value="R 18"  name="Contact_Model" onclick="updateDropdown(this)"/>
 														<label class="custom-control-label" for="ck215">
 															<img src="../assets/images/vehicle/R18.jpg" alt="R 18" class="img-fluid center-block"/>
 															<p class="vehicle-title text-center">R 18</p>
+														</label>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="custom-control custom-radio image-checkbox">
+														<input type="radio" class="custom-control-input" id="ck216" value="R 18 B"  name="Contact_Model" onclick="updateDropdown(this)"/>
+														<label class="custom-control-label" for="ck216">
+															<img src="../assets/images/vehicle/R18B.jpg" alt="R 18 B" class="img-fluid center-block"/>
+															<p class="vehicle-title text-center">R 18 B</p>
 														</label>
 													</div>
 												</div>
@@ -461,13 +470,13 @@
 								<select class="form-control" id="selected-dealer" name="Contact_Location" required="" data-error="Vui lòng chọn địa điểm lái thử">
 									<option value="">- CHỌN ĐỊA ĐIỂM LÁI THỬ -</option>
 																			
-										<option value="BMW Motorrad Long Biên">BMW Motorrad Long Biên</option>
+										<!--<option value="BMW Motorrad Long Biên">BMW Motorrad Long Biên</option>
 										
 										<option value="BMW Motorrad Đà Nẵng">BMW Motorrad Đà Nẵng</option>
 										
 										<option value="BMW Motorrad Sala">BMW Motorrad Sala</option>
 										
-										<option value="BMW Motorrad Nguyễn Văn Trỗi">BMW Motorrad Nguyễn Văn Trỗi</option>
+										<option value="BMW Motorrad Nguyễn Văn Trỗi">BMW Motorrad Nguyễn Văn Trỗi</option>-->
 								</select>
 								<!-- Error -->
 								<div class="help-block with-errors"></div>

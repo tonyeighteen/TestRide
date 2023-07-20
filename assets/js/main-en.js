@@ -117,6 +117,42 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 			);
 			
 		});
+
+		//add dealers list
+		function updateDropdown(selectedRadio) {
+            const dropdown = document.getElementById("selected-dealer");
+            dropdown.innerHTML = ""; // Clear existing options
+
+            if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "F 850 GS" || selectedRadio.value === "S 1000 XR" || selectedRadio.value === "F 850 GS" || selectedRadio.value === "C 400 X" || selectedRadio.value === "C 400 GT" || selectedRadio.value === "S 1000 R" || selectedRadio.value === "R nineT" || selectedRadio.value === "R 18") {
+                // Update dropdown options based on Option 1
+                const dealerslist1 = [
+					{ text: "- CHOOSE A DEALER -", value: "" },
+                    { text: "BMW Motorrad Long Bien", value: "BMW Motorrad Long Biên" },
+                    { text: "BMW Motorrad Da Nang", value: "BMW Motorrad Đà Nẵng" },
+                    { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
+					{ text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+                ];
+                addOptionsToDropdown(dealerslist1);
+            } else if (selectedRadio.value === "R 18 B") {
+                // Update dropdown options based on Option 2
+                const dealerslist2 = [
+					{ text: "- CHOOSE A DEALER -", value: "" },
+                    { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
+                    { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+                ];
+                addOptionsToDropdown(dealerslist2);
+            }
+        }
+
+        function addOptionsToDropdown(items) {
+            const dealers = document.getElementById("selected-dealer");
+            items.forEach(item => {
+                const option = document.createElement("option");
+                option.text = item.text;
+                option.value = item.value;
+                dealers.add(option);
+            });
+        }
 		
 		//selected-dealer
 		$('#selected-dealer').on('change', function() {
