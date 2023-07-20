@@ -123,7 +123,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
             const dropdown = document.getElementById("selected-dealer");
             dropdown.innerHTML = ""; // Clear existing options
 
-            if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "F 850 GS" || selectedRadio.value === "S 1000 XR" || selectedRadio.value === "F 850 GS" || selectedRadio.value === "C 400 X" || selectedRadio.value === "C 400 GT" || selectedRadio.value === "S 1000 R" || selectedRadio.value === "R nineT" || selectedRadio.value === "R 18") {
+            if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "C 400 GT" || selectedRadio.value === "R nineT" || selectedRadio.value === "R 18") {
                 // Update dropdown options based on Option 1
                 const dealerslist1 = [
 					{ text: "- CHOOSE A DEALER -", value: "" },
@@ -133,7 +133,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 					{ text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
                 ];
                 addOptionsToDropdown(dealerslist1);
-            } else if (selectedRadio.value === "R 18 B") {
+            } else if (selectedRadio.value === "R 18 B" || selectedRadio.value === "R nineT Scrambler" || selectedRadio.value === "S 1000 R") {
                 // Update dropdown options based on Option 2
                 const dealerslist2 = [
 					{ text: "- CHOOSE A DEALER -", value: "" },
