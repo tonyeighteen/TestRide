@@ -133,6 +133,8 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 					{ text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
                 ];
                 addOptionsToDropdown(dealerslist1);
+				$(".summaryData").removeClass("active");
+			    $(".summaryInfo").removeClass("active");
             } else if (selectedRadio.value === "R 18 B" || selectedRadio.value === "R nineT Scrambler" || selectedRadio.value === "S 1000 R") {
                 // Update dropdown options based on Option 2
                 const dealerslist2 = [
@@ -141,6 +143,8 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
                     { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
                 ];
                 addOptionsToDropdown(dealerslist2);
+				$(".summaryData").removeClass("active");
+			    $(".summaryInfo").removeClass("active");
             }
         }
 
