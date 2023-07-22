@@ -387,9 +387,12 @@
         line-height: 28px;
         margin:30px 0;
     }
+
+    .selected-dealer .summaryInfo {
+        display:none;
+    }
     
-    .selected-dealer .summaryData
-    {
+    .selected-dealer .summaryData {
         display:none;
     }
     

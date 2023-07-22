@@ -158,15 +158,23 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 		$('#selected-dealer').on('change', function() {
 			var value = this.value;
 			$(".summaryData").removeClass("active");
+			$(".summaryInfo").removeClass("active");
 
 			if(value == "BMW Motorrad Long Biên"){
 				$("#summaryData1").addClass("active");
+				$("#summaryInfo").addClass("active");
 			}else if(value == "BMW Motorrad Đà Nẵng"){
 				$("#summaryData2").addClass("active");
+				$("#summaryInfo").addClass("active");
 			}else if(value == "BMW Motorrad Sala"){
 				$("#summaryData3").addClass("active");
+				$("#summaryInfo").addClass("active");
 			}else if(value == "BMW Motorrad Nguyễn Văn Trỗi"){
 				$("#summaryData4").addClass("active");
+				$("#summaryInfo").addClass("active");
+			}else if(value == ""){
+				$(".summaryData").removeClass("active");
+				$(".summaryInfo").removeClass("active");
 			}
 		   
 		});
