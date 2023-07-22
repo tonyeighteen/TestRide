@@ -74,6 +74,20 @@
         font-family:VN_BMWMotorrad-Bold;
         float:left;
     }
+
+    .circle {
+        width: 50px; /* Adjust the size of the circle */
+        height: 50px;
+        border-radius: 50%; /* To create a perfect circle, set border-radius to half of width/height */
+        background-color: #000; /* Circle background color */
+        color: white; /* Number color */
+        font-size: 32px; /* Font size of the number */
+        font-family:VN_BMWMotorrad-Bold;
+        display: flex;
+        justify-content: center; /* Center the number horizontally */
+        align-items: center; /* Center the number vertically */
+      }
+
     .toppic-text{
         line-height: 43px;
         padding-left: 15px;
