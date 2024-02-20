@@ -176,6 +176,9 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 			}else if(value == "BMW Motorrad Nguyễn Văn Trỗi"){
 				$("#summaryData4").addClass("active");
 				$("#summaryInfo").addClass("active");
+			}else if(value == "BMW Motorrad Bình Dương"){
+				$("#summaryData5").addClass("active");
+				$("#summaryInfo").addClass("active");
 			}else if(value == ""){
 				$(".summaryData").removeClass("active");
 				$(".summaryInfo").removeClass("active");
