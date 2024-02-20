@@ -123,14 +123,14 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
             const dropdown = document.getElementById("selected-dealer");
             dropdown.innerHTML = ""; // Clear existing options
 
-            if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "C 400 GT" || selectedRadio.value === "R nineT" || selectedRadio.value === "R 18") {
+            if (selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "R nineT" || selectedRadio.value === "R 18") {
                 // Update dropdown options based on Option 1
                 const dealerslist1 = [
 					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
                     { text: "BMW Motorrad Long Biên", value: "BMW Motorrad Long Biên" },
                     { text: "BMW Motorrad Đà Nẵng", value: "BMW Motorrad Đà Nẵng" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
-					{ text: "BMW Motorrad Nguyễn Văn Trỗi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+		    { text: "BMW Motorrad Nguyễn Văn Trỗi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
                 ];
                 addOptionsToDropdown(dealerslist1);
 				$(".summaryData").removeClass("active");
@@ -141,6 +141,18 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
                     { text: "BMW Motorrad Nguyễn Văn Trỗi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+                ];
+                addOptionsToDropdown(dealerslist2);
+				$(".summaryData").removeClass("active");
+			    $(".summaryInfo").removeClass("active");
+            } else if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "C 400 GT") {
+                // Update dropdown options based on Option 3
+                const dealerslist2 = [
+					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
+                    { text: "BMW Motorrad Long Biên", value: "BMW Motorrad Long Biên" },
+                    { text: "BMW Motorrad Đà Nẵng", value: "BMW Motorrad Đà Nẵng" },
+                    { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
+		    { text: "BMW Motorrad Nguyễn Văn Trỗi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
                 ];
                 addOptionsToDropdown(dealerslist2);
 				$(".summaryData").removeClass("active");
