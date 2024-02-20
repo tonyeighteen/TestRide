@@ -147,14 +147,15 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 			    $(".summaryInfo").removeClass("active");
             } else if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "C 400 GT") {
                 // Update dropdown options based on Option 3
-                const dealerslist2 = [
+                const dealerslist3 = [
 					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
                     { text: "BMW Motorrad Long Biên", value: "BMW Motorrad Long Biên" },
                     { text: "BMW Motorrad Đà Nẵng", value: "BMW Motorrad Đà Nẵng" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
 		    { text: "BMW Motorrad Nguyễn Văn Trỗi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+		    { text: "BMW Motorrad Bình Dương", value: "BMW Motorrad Bình Dương" },
                 ];
-                addOptionsToDropdown(dealerslist2);
+                addOptionsToDropdown(dealerslist3);
 				$(".summaryData").removeClass("active");
 			    $(".summaryInfo").removeClass("active");
             }
