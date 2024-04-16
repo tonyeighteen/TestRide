@@ -123,7 +123,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
             const dropdown = document.getElementById("selected-dealer");
             dropdown.innerHTML = ""; // Clear existing options
 
-            if (selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "R nineT" || selectedRadio.value === "R 18") {
+            if (selectedRadio.value === "R 1250 GS  Adventure" || selectedRadio.value === "R nineT" || selectedRadio.value === "R 18") {
                 // Update dropdown options based on Option 1
                 const dealerslist1 = [
 					{ text: "- CHOOSE A DEALER -", value: "" },
@@ -135,7 +135,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
                 addOptionsToDropdown(dealerslist1);
 				$(".summaryData").removeClass("active");
 			    $(".summaryInfo").removeClass("active");
-            } else if (selectedRadio.value === "R 18 B" || selectedRadio.value === "R nineT Scrambler" || selectedRadio.value === "S 1000 R") {
+            } else if (selectedRadio.value === "R 18 B" || selectedRadio.value === "R nineT  Scrambler" || selectedRadio.value === "S 1000 R") {
                 // Update dropdown options based on Option 2
                 const dealerslist2 = [
 					{ text: "- CHOOSE A DEALER -", value: "" },
