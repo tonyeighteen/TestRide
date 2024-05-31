@@ -123,7 +123,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
             const dropdown = document.getElementById("selected-dealer");
             dropdown.innerHTML = ""; // Clear existing options
 
-            if (selectedRadio.value === "R 1250 GS  Adventure" || selectedRadio.value === "R nineT" || selectedRadio.value === "R 18") {
+            if (selectedRadio.value === "R 18") {
                 // Update dropdown options based on Option 1
                 const dealerslist1 = [
 					{ text: "- CHOOSE A DEALER -", value: "" },
@@ -145,7 +145,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
                 addOptionsToDropdown(dealerslist2);
 				$(".summaryData").removeClass("active");
 			    $(".summaryInfo").removeClass("active");
-            } else if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "C 400 GT") {
+            } else if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS  Adventure" || selectedRadio.value === "C 400 GT") {
                 // Update dropdown options based on Option 3
                 const dealerslist3 = [
 					{ text: "- CHOOSE A DEALER -", value: "" },
@@ -156,6 +156,27 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 		    { text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
                 ];
                 addOptionsToDropdown(dealerslist3);
+				$(".summaryData").removeClass("active");
+			    $(".summaryInfo").removeClass("active");
+            } else if (selectedRadio.value === "R nineT") {
+                // Update dropdown options based on Option 4
+                const dealerslist4 = [
+					{ text: "- CHOOSE A DEALER -", value: "" },
+                    { text: "BMW Motorrad Long Bien", value: "BMW Motorrad Long Biên" },
+                    { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
+		    { text: "BMW Motorrad NguyEn Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+		    { text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
+                ];
+                addOptionsToDropdown(dealerslist4);
+				$(".summaryData").removeClass("active");
+			    $(".summaryInfo").removeClass("active");
+            } else if (selectedRadio.value === "R 1250 RT") {
+                // Update dropdown options based on Option 5
+                const dealerslist5 = [
+					{ text: "- CHOOSE A DEALER -", value: "" },
+                    { text: "BMW Motorrad Long Bien", value: "BMW Motorrad Long Biên" },
+                ];
+                addOptionsToDropdown(dealerslist5);
 				$(".summaryData").removeClass("active");
 			    $(".summaryInfo").removeClass("active");
             }
