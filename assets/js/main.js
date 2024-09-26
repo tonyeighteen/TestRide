@@ -135,7 +135,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
                 addOptionsToDropdown(dealerslist1);
 				$(".summaryData").removeClass("active");
 			    $(".summaryInfo").removeClass("active");
-            } else if (selectedRadio.value === "R 18 B" || selectedRadio.value === "R nineT  Scrambler" || selectedRadio.value === "S 1000 R") {
+            } else if (selectedRadio.value === "R 18 B" || selectedRadio.value === "R nineT Scrambler" || selectedRadio.value === "S 1000 R") {
                 // Update dropdown options based on Option 2
                 const dealerslist2 = [
 					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
