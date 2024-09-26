@@ -145,7 +145,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
                 addOptionsToDropdown(dealerslist2);
 				$(".summaryData").removeClass("active");
 			    $(".summaryInfo").removeClass("active");
-            } else if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS  Adventure" || selectedRadio.value === "C 400 GT") {
+            } else if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "C 400 GT") {
                 // Update dropdown options based on Option 3
                 const dealerslist3 = [
 					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
