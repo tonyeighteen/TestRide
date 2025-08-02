@@ -179,6 +179,17 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
                 addOptionsToDropdown(dealerslist5);
 				$(".summaryData").removeClass("active");
 			    $(".summaryInfo").removeClass("active");
+            } else if (selectedRadio.value === "R 12 nineT") {
+                // Update dropdown options based on Option 6
+                const dealerslist6 = [
+					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
+                    { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
+		    { text: "BMW Motorrad Nguyễn Văn Trỗi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+		    { text: "BMW Motorrad Bình Dương", value: "BMW Motorrad Bình Dương" },
+                ];
+                addOptionsToDropdown(dealerslist6);
+				$(".summaryData").removeClass("active");
+			    $(".summaryInfo").removeClass("active");
             }
         }
 
