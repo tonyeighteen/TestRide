@@ -142,6 +142,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
                     { text: "BMW Motorrad Nguyễn Văn Trỗi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+					{ text: "BMW Motorrad Bình Dương", value: "BMW Motorrad Bình Dương" },
                 ];
                 addOptionsToDropdown(dealerslist2);
 				$(".summaryData").removeClass("active");
