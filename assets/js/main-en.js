@@ -123,14 +123,15 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
             const dropdown = document.getElementById("selected-dealer");
             dropdown.innerHTML = ""; // Clear existing options
 
-            if (selectedRadio.value === "R 18") {
+            if (selectedRadio.value === "R 18" || "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "C 400 GT") {
                 // Update dropdown options based on Option 1
                 const dealerslist1 = [
 					{ text: "- CHOOSE A DEALER -", value: "" },
                     { text: "BMW Motorrad Long Bien", value: "BMW Motorrad Long Biên" },
                     { text: "BMW Motorrad Da Nang", value: "BMW Motorrad Đà Nẵng" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
-		    { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+		 		    { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+					{ text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
                 ];
                 addOptionsToDropdown(dealerslist1);
 				$(".summaryData").removeClass("active");
@@ -141,19 +142,18 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 					{ text: "- CHOOSE A DEALER -", value: "" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
                     { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+					{ text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
                 ];
                 addOptionsToDropdown(dealerslist2);
 				$(".summaryData").removeClass("active");
 			    $(".summaryInfo").removeClass("active");
-            } else if (selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "C 400 GT") {
+            } else if (selectedRadio.value === "R 1300 GS" || selectedRadio.value === "R 1300 GS Adventure") {
                 // Update dropdown options based on Option 3
                 const dealerslist3 = [
 					{ text: "- CHOOSE A DEALER -", value: "" },
-                    { text: "BMW Motorrad Long Bien", value: "BMW Motorrad Long Biên" },
-                    { text: "BMW Motorrad Da Nang", value: "BMW Motorrad Đà Nẵng" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
-		    { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
-		    { text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
+				    { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+		  			{ text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
                 ];
                 addOptionsToDropdown(dealerslist3);
 				$(".summaryData").removeClass("active");
@@ -164,8 +164,8 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 					{ text: "- CHOOSE A DEALER -", value: "" },
                     { text: "BMW Motorrad Long Bien", value: "BMW Motorrad Long Biên" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
-		    { text: "BMW Motorrad NguyEn Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
-		    { text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
+				    { text: "BMW Motorrad NguyEn Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+				    { text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
                 ];
                 addOptionsToDropdown(dealerslist4);
 				$(".summaryData").removeClass("active");
@@ -184,8 +184,8 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
                 const dealerslist6 = [
 					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
-		    { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
-		    { text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
+				    { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+				    { text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
                 ];
                 addOptionsToDropdown(dealerslist6);
 				$(".summaryData").removeClass("active");
