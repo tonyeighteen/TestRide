@@ -164,7 +164,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
 					{ text: "- CHOOSE A DEALER -", value: "" },
                     { text: "BMW Motorrad Long Bien", value: "BMW Motorrad Long Biên" },
                     { text: "BMW Motorrad Sala", value: "BMW Motorrad Sala" },
-				    { text: "BMW Motorrad NguyEn Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
+				    { text: "BMW Motorrad Nguyen Van Troi", value: "BMW Motorrad Nguyễn Văn Trỗi" },
 				    { text: "BMW Motorrad Binh Duong", value: "BMW Motorrad Bình Dương" },
                 ];
                 addOptionsToDropdown(dealerslist4);
