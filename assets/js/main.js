@@ -123,7 +123,7 @@ removejscssfile("55013136-widget_css_bundle.css", "css") //remove all occurences
             const dropdown = document.getElementById("selected-dealer");
             dropdown.innerHTML = ""; // Clear existing options
 
-            if (selectedRadio.value === "R 18" || "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "C 400 GT") {
+            if (selectedRadio.value === "R 18" || selectedRadio.value === "R 1250 GS" || selectedRadio.value === "R 1250 GS Adventure" || selectedRadio.value === "C 400 GT") {
                 // Update dropdown options based on Option 1
                 const dealerslist1 = [
 					{ text: "- CHỌN ĐỊA ĐIỂM LÁI THỬ -", value: "" },
